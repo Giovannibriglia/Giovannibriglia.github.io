@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Career Update
-date: 20124-07-31
+date: 2024-07-31
 description: What is happened until today and PhD announce
 tags: career update
 categories: sample-posts
