@@ -2,9 +2,9 @@
 layout: post
 title: Career Update
 date: 2024-07-31
-description: What is happened until today and PhD announce
-tags: [career update]
-# categories: sample-posts
+description: What is happened so far and PhD announcement
+tags: [update]
+category: work
 ---
 
 In the past year (2023), after coming back from Munich, where I completed an incredible exchange semester through the
