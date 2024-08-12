@@ -24,7 +24,7 @@ I am engaged in a partnership between the University of Pisa and the University 
 [Franco Zambonelli](https://personale.unimore.it/rubrica/dettaglio/zambonelli) and
 [Stefano Mariani](https://smarianimore.github.io/).
 
-For more details about me, you can check my [cv](../assets/pdf/cv.pdf).
+For more details, you can check my [cv](../assets/pdf/cv.pdf).
 
 My focus comprehends `Causality-Driven Reinforcement Learning` in multi-agent system scenarios.
 In particular, the primary goal of my research is to create a theoretical and practical framework for incorporating
@@ -42,5 +42,3 @@ models take care of efficiency, safety and generalisability.
 
 For more details,
 you can check my [PhD research proposal](../assets/pdf/ResearchProject_NationalPhD_AI_BrigliaGiovanni.pdf).
-
-
