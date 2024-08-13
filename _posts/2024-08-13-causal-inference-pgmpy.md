@@ -5,7 +5,6 @@ date: 2024-08-13
 description: How to employ correctly causal inference in Python, what is causal inference and why you need it
 tags: [concepts]
 category: work
-giscus_comments: true
 related_posts: false
 related_publications: true
 ---
