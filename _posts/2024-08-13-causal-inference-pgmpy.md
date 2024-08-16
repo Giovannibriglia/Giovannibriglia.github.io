@@ -6,6 +6,8 @@ description: How to employ correctly causal inference in Python, what is causal 
 tags: [concepts]
 category: work
 related_publications: true
+scholar:
+  bibliography: _bibliography/blog_references.bib
 ---
 
 ```python
@@ -151,5 +153,3 @@ class SingleCausalInference:
 ```
 
 {% cite pearl2010causal %} miao
-
-{% bibliography %}
