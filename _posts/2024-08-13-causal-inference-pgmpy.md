@@ -7,7 +7,7 @@ tags: [concepts]
 category: work
 related_publications: true
 scholar:
-  bibliography: _bibliography/blog_references.bib
+  bibliography: blog_references.bib
 ---
 
 ```python
