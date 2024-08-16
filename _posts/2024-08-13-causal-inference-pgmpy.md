@@ -6,7 +6,6 @@ description: How to employ correctly causal inference in Python, what is causal 
 tags: [concepts]
 category: work
 related_publications: true
-
 ---
 
 ```python
