@@ -9,5 +9,5 @@ category: work
 
 Useful links:
 
-<li> https://medium.com/capital-one-tech/python-guide-using-multiprocessing-versus-multithreading-55c4ea1788cd </li>
-<li> https://www.geeksforgeeks.org/difference-between-multithreading-vs-multiprocessing-in-python/ </li>
+- [Mario](https://medium.com/capital-one-tech/python-guide-using-multiprocessing-versus-multithreading-55c4ea1788cd)
+- [Mario](https://www.geeksforgeeks.org/difference-between-multithreading-vs-multiprocessing-in-python/)
