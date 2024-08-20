@@ -7,8 +7,4 @@ tags: [concepts, code]
 category: research
 ---
 
-In progress...
-
-```
-
-```
+In progress
