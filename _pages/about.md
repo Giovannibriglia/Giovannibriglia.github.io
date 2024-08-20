@@ -7,9 +7,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
-  more_info: >
-    <p>PhD Student,</p>
-    <p>Italian National PhD in AI</p>
+  #more_info: > <p>PhD Student,</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -24,7 +22,7 @@ I am engaged in a partnership between the University of Pisa and the University 
 [Franco Zambonelli](https://personale.unimore.it/rubrica/dettaglio/zambonelli) and
 [Stefano Mariani](https://smarianimore.github.io/).
 
-For more details, check my [CV](../assets/pdf/cv.pdf).
+<!--For more details, check my [CV](../assets/pdf/cv.pdf). -->
 
 My focus comprehends `Causality-Driven Reinforcement Learning` in multi-agent system scenarios.
 In particular, the primary goal of my research is to create a theoretical and practical framework for incorporating

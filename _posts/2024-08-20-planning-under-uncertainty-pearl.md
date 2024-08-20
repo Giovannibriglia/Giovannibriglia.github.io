@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Judea Pearl on planning under uncertainty
-date: 2024-08-17
+date: 2024-08-20
 description: A probabilistic calculus of actions
 tags: [citation]
 category: research
