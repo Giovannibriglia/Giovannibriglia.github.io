@@ -4,7 +4,7 @@ title: Judea Pearl on planning under uncertainty
 date: 2024-08-17
 description: A probabilistic calculus of actions
 tags: [citation]
-category: work
+category: research
 related_publications: true
 scholar:
   bibliography: blog_references.bib

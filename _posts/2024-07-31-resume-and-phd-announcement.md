@@ -4,7 +4,7 @@ title: Career Update
 date: 2024-07-31
 description: What is happened so far and PhD announcement
 tags: [update]
-category: work
+category: career
 ---
 
 In the past year (2023), after coming back from Munich, where I completed an incredible exchange semester through the

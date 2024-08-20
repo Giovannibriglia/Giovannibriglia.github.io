@@ -303,7 +303,7 @@ jekyll-archives:
     category: "/blog/category/:name/"
 
 display_tags: ["update", "concepts", "code", "citation"] # these tags will be displayed on the front page of your blog
-display_categories: ["work", "other"] # these categories will be displayed on the front page of your blog
+display_categories: ["research", "career"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
