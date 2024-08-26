@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Aleksander Molak interview Judea Pearl
+title: Aleksander Molak interviews Judea Pearl
 date: 2024-08-26
 description: Key concepts and recommendations for the causal community and beyond
 tags: [concepts]
