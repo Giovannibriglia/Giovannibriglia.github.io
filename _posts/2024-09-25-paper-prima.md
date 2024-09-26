@@ -28,35 +28,31 @@ a wide range of applications in AI and autonomous systems.
 
 [Explore the Code and Results on GitHub](https://github.com/Giovannibriglia/AgentGroup_CausalRL)
 
+---
+
 ### Environment Examples
 
 Below are examples of the environments considered:
 
-<div style="display: flex;">
-  <img src="../assets/img/grid.gif" alt="Grid Environment" style="width: 48%; margin-right: 10px;"/>
-  <img src="../assets/img/maze.gif" alt="Maze Environment" style="width: 48%;"/>
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/grid.gif" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/maze.gif" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
+
+---
 
 ### Plot Extract
 
 Here is an extract from the results:
 
-<div style="display: flex;">
-  <img src="../assets/img/prima_plot.png" alt="Extracted Results Plot"/>
-</div>
-
----
-
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/prima_plot.png" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/prima_plot.png" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    A simple, elegant caption looks good between image rows, after each row, or doesn't have to be there at all.
 </div>
 
 ---
