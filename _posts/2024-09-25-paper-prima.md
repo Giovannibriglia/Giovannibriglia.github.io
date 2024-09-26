@@ -1,11 +1,10 @@
-2---
+---
 layout: post
 title: Improving Reinforcement Learning Exploration with Causal Models
 date: 2024-08-26
 description: New paper accepted at PRIMA 2024, Kyoto, 18-24 November
 tags: [concepts, update]
 category: research
-
 ---
 
 ### Resume
