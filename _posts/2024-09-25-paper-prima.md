@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Improving Reinforcement Learning Exploration with Causal Models
-date: 2024-08-26
+date: 2024-09-25
 description: New paper accepted at PRIMA 2024, Kyoto, 18-24 November
 tags: [concepts, update]
 category: research
@@ -9,7 +9,7 @@ category: research
 
 ### Resume
 
-In this work, I explore a novel way to enhance reinforcement learning (RL) in autonomous agents by integrating causal
+In this work, we explore a novel way to enhance reinforcement learning (RL) in autonomous agents by integrating causal
 models into the learning process. We introduce the Causality-Driven Reinforcement Learning (CDRL) framework, it can
 improve exploration efficiency by leveraging causal discovery. Rather than requiring agents to explore all possible
 actions and states, CDRL learns a causal model from a simplified version of the environment. This model focuses
