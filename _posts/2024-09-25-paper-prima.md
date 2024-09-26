@@ -1,10 +1,11 @@
----
+2---
 layout: post
 title: Improving Reinforcement Learning Exploration with Causal Models
 date: 2024-08-26
 description: New paper accepted at PRIMA 2024, Kyoto, 18-24 November
 tags: [concepts, update]
 category: research
+
 ---
 
 ### Resume
@@ -36,10 +37,10 @@ Below are examples of the environments considered:
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/grid.gif" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="lazy" path="assets/img/grid.gif" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/maze.gif" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="lazy" path="assets/img/maze.gif" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -51,7 +52,7 @@ Here is an extract from the results:
 
 <div class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/prima_plot.png" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="lazy" path="assets/img/prima_plot.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
