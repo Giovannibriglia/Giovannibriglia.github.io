@@ -22,7 +22,7 @@ I will engage in a partnership between the University of Pisa and the University
 [Franco Zambonelli](https://personale.unimore.it/rubrica/dettaglio/zambonelli) and
 [Stefano Mariani](https://smarianimore.github.io/).
 
-<!--For more details, check my [CV](../assets/pdf/cv.pdf). -->
+For more details, check my [CV](../assets/pdf/cv.pdf).
 
 My focus comprehends `Causality-Driven Reinforcement Learning` in multi-agent system scenarios.
 In particular, the primary goal of my research is to create a theoretical and practical framework for incorporating
