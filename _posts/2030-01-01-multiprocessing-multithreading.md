@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multithreading and Multiprocessing in Python
-date: 2024-10-30
+date: 2030-01-01
 description: Core concepts, distinctions, best practices, and potential implementations
 tags: [concepts, code]
 category: research
