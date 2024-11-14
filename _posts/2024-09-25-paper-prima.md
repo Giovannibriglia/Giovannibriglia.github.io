@@ -35,14 +35,11 @@ a wide range of applications in AI and autonomous systems.
 Below are examples of the environments considered:
 
 <div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-6">
         {% include figure.liquid loading="lazy" path="assets/img/grid.gif" class="img-fluid rounded z-depth-1" %}
     </div>
-</div>
-
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="lazy" path="assets/img/grid.gif" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-6">
+        {% include figure.liquid loading="lazy" path="assets/img/maze.gif" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
