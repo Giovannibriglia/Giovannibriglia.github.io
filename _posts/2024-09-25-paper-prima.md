@@ -39,6 +39,9 @@ Below are examples of the environments considered:
     <img src="../assets/img/maze.gif" alt="Maze Environment Example" loading="lazy" style="width: 48%; border-radius: 5px;"/>
 </div>
 
+![Grid Environment Example](../assets/img/grid.gif)
+![Maze Environment Example](../assets/img/maze.gif)
+
 ---
 
 ### Plot Extract
