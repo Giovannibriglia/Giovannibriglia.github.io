@@ -34,13 +34,9 @@ a wide range of applications in AI and autonomous systems.
 
 Below are examples of the environments considered:
 
-<div class="row mt-3">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="lazy" path="assets/img/grid.gif" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="lazy" path="assets/img/maze.gif" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div style="display: flex; gap: 10px; margin-top: 1rem;">
+    <img src="../assets/img/grid.gif" alt="Grid Environment Example" loading="lazy" style="width: 48%; border-radius: 5px;"/>
+    <img src="../assets/img/maze.gif" alt="Maze Environment Example" loading="lazy" style="width: 48%; border-radius: 5px;"/>
 </div>
 
 ---
