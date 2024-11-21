@@ -11,7 +11,7 @@ scholar:
 ---
 
 Today I had the privilege of presenting our paper, _"Improving Reinforcement Learning-Based Autonomous Agents with Causal Models,"_ at PRIMA 2024 in Kyoto.
-You can access the slides I presented via [this link](https://docs.google.com/presentation/d/e/2PACX-1vTDZUHQdq7vz76_2bpJQyv7qEs7iYSTHEL0j5rVM4-nWIytgcNoq7vLfv64DY4Qeg/pub?start=false&loop=false&delayms=60000).
+You can access the slides I presented via this [ink](https://docs.google.com/presentation/d/e/2PACX-1vTDZUHQdq7vz76_2bpJQyv7qEs7iYSTHEL0j5rVM4-nWIytgcNoq7vLfv64DY4Qeg/pub?start=false&loop=false&delayms=60000).
 
 Feel free to reach out if you’d like to connect or discuss further!
 
