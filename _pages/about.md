@@ -19,7 +19,7 @@ Hi :)
 I am Giovanni Briglia, from November 2024 I am a PhD student at the
 [National PhD in AI](https://phd-ai-society.di.unipi.it/en/);
 I will engage in a partnership between the University of Pisa and the University of Modena and Reggio Emilia under the supervision of
-[Franco Zambonelli](https://personale.unimore.it/rubrica/dettaglio/zambonelli) and
+[Franco Zambonelli](https://scholar.google.com/citations?user=zxulxcoAAAAJ&hl=it) and
 [Stefano Mariani](https://smarianimore.github.io/).
 
 For more details, check my [CV](../assets/pdf/cv.pdf).
