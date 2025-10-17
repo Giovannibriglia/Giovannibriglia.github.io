@@ -5,4 +5,6 @@ repo_description_lines_max: 2
 
 github_repos:
   - Giovannibriglia/AgentGroup_CausalRL
-  - Giovannibriglia/ContinuousBayesianNetwork
+  - Giovannibriglia/VectorizedBayesianNetwork
+  - Giovannibriglia/benchmarking_causal_rl
+  - FrancescoFabiano/deep

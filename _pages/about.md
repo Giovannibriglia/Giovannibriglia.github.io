@@ -14,31 +14,42 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi :)
+# 👋 Hi there!
 
-I am Giovanni Briglia, from November 2024 I am a PhD student at the
-[National PhD in AI](https://phd-ai-society.di.unipi.it/en/);
-I will engage in a partnership between the University of Pisa and the University of Modena and Reggio Emilia under the supervision of
-[Franco Zambonelli](https://scholar.google.com/citations?user=zxulxcoAAAAJ&hl=it) and
-[Stefano Mariani](https://smarianimore.github.io/).
+I’m **Giovanni Briglia**.
+Since **November 2024**, I’ve been a **PhD student** in the [**National PhD in AI**](https://phd-ai-society.di.unipi.it/en/),
+supervised by [Franco Zambonelli](https://scholar.google.com/citations?user=zxulxcoAAAAJ&hl=it) and [Stefano Mariani](https://smarianimore.github.io/).
 
-For more details, check my [CV](../assets/pdf/cv.pdf).
+---
 
-My focus comprehends `Causality-Driven Reinforcement Learning` in multi-agent system scenarios.
-In particular, the primary goal of my research is to create a theoretical and practical framework for incorporating
-causal knowledge into both model-free and model-based (deep) Reinforcement Learning (RL) algorithms,
-in single and multi-agent systems.
+## 🎯 Research Overview
 
-Specifically, this research seeks to answer the following critical questions:
+My work focuses on **Causality-Driven Reinforcement Learning** across both single- and multi-agent domains,
+investigating how causal reasoning can be efficiently represented and integrated into RL to enhance generalization,
+sample efficiency, and the interpretability of decision-making processes.
 
-<ul>
-    <li> Can we enhance the efficiency, safety, and generalization capabilities of arbitrary model-free RL algorithms by
-   incorporating in action selection strategies causal models of core environmental dynamics? </li>
-   <li> Can this approach be applied to any combinations of target environment, RL algorithm, and task? </li>
-   <li> What is the minimal causal model necessary to achieve a measurable improvement? </li>
-</ul>
+---
 
-Overall, the idea is that (deep) RL algorithms should focus on solving the specific problem optimally, while causal
-models take care of efficiency, safety and generalisability.
+## 🔍 Research Questions
 
-For more details, check my [PhD research proposal](../assets/pdf/ResearchProject_NationalPhD_AI_BrigliaGiovanni.pdf).
+- **Representation** — What form of representation (possibly learned and continuously updated in real time)
+  best captures and infers transition dynamics and mechanisms both effectively and explainably?
+  How can such representations be reused across environments, tasks, and policies?
+
+- **Integration** — To what extent, and through which mechanisms, can causal knowledge be integrated into RL
+  so that it becomes an active component of policy optimization and value estimation?
+  At which stage(s) of the RL process is this integration most effective?
+
+- **Multi-Agent** — How can causality-driven RL methods be extended to multi-agent settings,
+  where cooperation and competition introduce additional layers of complexity and interdependence?
+
+---
+
+## 🧠 Main Interests
+
+**Reinforcement Learning** · **Causal Inference** · **Probabilistic Knowledge Representation**
+through **Bayesian** and **Causal (World) Models**
+
+---
+
+📄 For more details, check my [**CV**](../assets/pdf/cv.pdf).
