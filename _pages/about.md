@@ -17,7 +17,7 @@ social: true # includes social icons at the bottom of the page
 # 👋 Hi there!
 
 I’m **Giovanni Briglia**.
-Since **November 2024**, I’ve been a **PhD student** in the [**National PhD in AI**](https://phd-ai-society.di.unipi.it/en/),
+Since November 2024, I’ve been a PhD student in the [National PhD in AI](https://phd-ai-society.di.unipi.it/en/),
 supervised by [Franco Zambonelli](https://scholar.google.com/citations?user=zxulxcoAAAAJ&hl=it) and [Stefano Mariani](https://smarianimore.github.io/).
 
 ---
@@ -52,4 +52,6 @@ through **Bayesian** and **Causal (World) Models**
 
 ---
 
-📄 For more details, check my [**CV**](../assets/pdf/cv.pdf).
+### 📄 CV
+
+For more details, check my [**CV**](../assets/pdf/cv.pdf).
