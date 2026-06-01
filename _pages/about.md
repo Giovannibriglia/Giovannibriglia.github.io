@@ -47,8 +47,7 @@ sample efficiency, and the interpretability of decision-making processes.
 
 ## 🧠 Main Interests
 
-**Reinforcement Learning** · **Causal Inference** · **Probabilistic Knowledge Representation**
-through **Bayesian** and **Causal (World) Models**
+**(Multi-Agent) Reinforcement Learning** · **Causal Reasoning** · **Probabilistic Knowledge Representation**
 
 ---
 
