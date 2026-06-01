@@ -54,4 +54,4 @@ through **Bayesian** and **Causal (World) Models**
 
 ### 📄 CV
 
-For more details, check my [**CV**](../assets/pdf/cv.pdf) and [Master's Degree Transcript](../assets/pdf/MasterDegree.pdf) unfortunately only in Italian language.
+For more details, check my [**CV**](../assets/pdf/cv.pdf) and my [**Master's Degree Transcript**](../assets/pdf/MasterDegree.pdf) unfortunately only in Italian language.
