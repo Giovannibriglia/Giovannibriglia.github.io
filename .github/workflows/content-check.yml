@@ -1,0 +1,55 @@
+name: Check content
+
+# Checks the homepage content (publications, research questions, talks, news)
+# and the external links in it. The site build and deploy live in deploy.yml.
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+    branches:
+      - master
+      - main
+  schedule:
+    - cron: "0 6 * * 1" # Mondays at 06:00 UTC, to catch links that stop working
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  content:
+    name: Homepage data
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v5
+      - name: Install PyYAML
+        run: pip3 install --quiet pyyaml
+      - name: Check data files and news 🔎
+        run: python3 bin/check_content.py
+
+  links:
+    name: External links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v5
+      - name: Check links 🔗
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true
+          # Only the files that make up the site's own content.
+          # 403 and 429 are accepted because some publishers block bots.
+          args: >-
+            --no-progress
+            --verbose
+            --exclude-loopback
+            --accept '200..=299,403,429'
+            --max-concurrency 4
+            --max-retries 3
+            --retry-wait-time 5
+            --user-agent "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
+            '_pages/about.md' '_news/*.md' '_posts/*.md' '_data/*.yml' 'README.md'

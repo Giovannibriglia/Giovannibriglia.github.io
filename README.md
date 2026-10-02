@@ -97,8 +97,22 @@ bundle exec jekyll serve
 
 Then open http://localhost:4000. With Docker, `docker compose up` does the same.
 
-## Deploy
+## Deploy and checks
 
-Pushing to `master` runs the **Deploy site** GitHub Action, which builds the site and publishes it to the `gh-pages` branch. If the build fails, the live site stays as it was; check the repository's Actions tab for the error. Pull requests to `master` are built but not deployed.
+Pushing to `master` runs these GitHub Actions:
+
+| Workflow | What it does |
+| --- | --- |
+| **Deploy site** (`deploy.yml`) | Builds the site and publishes it to the `gh-pages` branch. If the build fails, the live site stays as it was. Pull requests are built but not deployed. |
+| **Check content** (`content-check.yml`) | Validates the homepage data with `bin/check_content.py` (required fields, tags, unique ids, research links, local files, news dates) and checks the external links in the content files. Also runs every Monday to catch links that stop working. |
+| **Check for broken links on site** (`broken-links-site.yml`) | After a deploy, checks the internal links in the built site. |
+
+Run the content check locally before pushing:
+
+```bash
+python3 bin/check_content.py
+```
+
+It needs PyYAML (`pip install pyyaml`) and lists any problem with the file it is in. If a check fails on GitHub, open the run in the Actions tab to see the error.
 
 The theme's own documentation is in [`INSTALL.md`](INSTALL.md), [`CUSTOMIZE.md`](CUSTOMIZE.md) and [`FAQ.md`](FAQ.md).
