@@ -1,0 +1,29 @@
+# Talks shown on the homepage, newest first.
+- when: Sep 2026
+  title: When, Why, and How Causality Is Needed in Reinforcement Learning
+  where: OXCAV seminar, University of Oxford
+
+- when: Sep 2026
+  title: A vision of causality in multi-agent reinforcement learning
+  where: Erlangen AI Hub Conference, Oxford
+  url: "https://erlangenhub.ox.ac.uk/event/the-erlangen-hub-conference-2026/"
+
+- when: May 2026
+  title: Scaling Multi-Agent Epistemic Planning through GNN-Derived Heuristics
+  where: AAMAS 2026, Paphos · oral
+  url: "/assets/pdf/2026_aamas_GNNxEpistemic_slides.pdf"
+
+- when: May 2026
+  title: Causal Learning and Reasoning in Multi-Agent RL
+  where: AAMAS 2026 Doctoral Consortium · poster
+  url: "/assets/pdf/2026_briglia_poster_aamas26_dc.pdf"
+
+- when: Oct 2025
+  title: Towards Safe Action Policies in Multi-robot Systems with Causal RL
+  where: AREA Workshop @ ECAI 2025, Bologna
+  url: "https://docs.google.com/presentation/d/e/2PACX-1vRZOpevFvDu5AMudp4KhepiNdqu19m-H6mKsmd9nQa9xrItNZHyovsHPO1HIa53iQ/pub?start=false&loop=false&delayms=3000"
+
+- when: Nov 2024
+  title: Improving RL-Based Autonomous Agents with Causal Models
+  where: PRIMA 2024, Kyoto
+  url: "https://docs.google.com/presentation/d/e/2PACX-1vTDZUHQdq7vz76_2bpJQyv7qEs7iYSTHEL0j5rVM4-nWIytgcNoq7vLfv64DY4Qeg/pub?start=false&loop=false&delayms=60000"

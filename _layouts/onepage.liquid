@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description | strip_html | strip }}">
+    <meta name="author" content="{{ site.first_name }} {{ site.last_name }}">
+    {% if site.keywords %}<meta name="keywords" content="{{ site.keywords }}">{% endif %}
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description | strip_html | strip }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/img/home/avatar.jpg' | absolute_url }}">
+    <meta name="theme-color" content="#fafbfc">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233b3ad0'/%3E%3Cpath d='M20 32L44 19M20 32L44 45' stroke='%23fff' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='20' cy='32' r='8' fill='%23fff'/%3E%3Ccircle cx='44' cy='19' r='6' fill='%23fff'/%3E%3Ccircle cx='44' cy='45' r='6' fill='%23fff'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="{{ '/assets/onepage/site.css' | relative_url }}">
+  </head>
+  <body>
+    {% assign pubs = site.data.publications.items %}
+    {% assign me = site.data.publications.me %}
+    {% assign cv_url = '/assets/pdf/cv.pdf' | relative_url %}
+
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href="#top">{{ site.first_name }} {{ site.last_name }}</a>
+        <nav class="nav" aria-label="Sections">
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#news">News</a>
+          <a href="#talks">Talks</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <a class="btn-cv" href="{{ cv_url }}">CV</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="wrap">
+          <div class="hero-text">
+            <div class="who">
+              <img src="{{ '/assets/img/home/avatar.jpg' | relative_url }}" alt="Portrait of {{ site.first_name }} {{ site.last_name }}" width="60" height="60">
+              <div>
+                <div class="who-name">{{ site.first_name }} {{ site.last_name }}</div>
+                <div class="who-role">{{ page.role }}</div>
+              </div>
+            </div>
+            <h1 class="headline">{{ page.headline }}</h1>
+            <p class="intro">{{ page.intro }}</p>
+            {% if content and content != '' %}<div class="hosts">{{ content }}</div>{% endif %}
+            <div class="actions">
+              <a class="btn btn-primary" href="#research">
+                Research questions
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+              </a>
+              <a class="btn btn-ghost" href="#publications">Publications</a>
+            </div>
+          </div>
+
+          <figure class="hero-figure">
+            <svg viewBox="0 0 520 440" role="img" aria-labelledby="fig-title">
+              <title id="fig-title">Time-unrolled causal graph of two agents. The state at time t points to the actions of agent 1 and agent 2 and to the next state, and both actions point to the next state. An intervention on agent 1's action cuts the edge from the state to that action.</title>
+              <defs>
+                <pattern id="fig-dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#262c44"/></pattern>
+                <radialGradient id="fig-glow"><stop offset="0" style="stop-color: var(--accent); stop-opacity: 0.55"/><stop offset="1" style="stop-color: var(--accent); stop-opacity: 0"/></radialGradient>
+                <marker id="fig-ah-l" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c9cfe0"/></marker>
+                <marker id="fig-ah-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill: var(--accent)"/></marker>
+                <marker id="fig-ah-y" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#f2b33d"/></marker>
+              </defs>
+              <rect width="520" height="440" fill="url(#fig-dots)"/>
+              <rect x="22" y="22" width="304" height="364" rx="18" fill="#ffffff" fill-opacity="0.025" stroke="#ffffff" stroke-opacity="0.07"/>
+              <rect x="340" y="22" width="158" height="364" rx="18" fill="#ffffff" fill-opacity="0.025" stroke="#ffffff" stroke-opacity="0.07"/>
+              <text x="40" y="48" font-size="11" letter-spacing="1.5" fill="#7d84a0">TIME t</text>
+              <text x="358" y="48" font-size="11" letter-spacing="1.5" fill="#7d84a0">TIME t+1</text>
+              <circle cx="250" cy="110" r="120" fill="url(#fig-glow)"/>
+              <path d="M117 182.9 Q150 130 191.2 121.8" fill="none" stroke="#59607c" stroke-width="1.8" stroke-dasharray="4 6"/>
+              <circle cx="152" cy="141" r="11" fill="#0e1120"/>
+              <path d="M146.5 135.5l11 11M157.5 135.5l-11 11" stroke="#ff7a59" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+              <path d="M117 237.1 Q150 290 212.8 302.6" fill="none" stroke="#c9cfe0" stroke-width="1.8" marker-end="url(#fig-ah-l)"/>
+              <path d="M134 210 L378 210" fill="none" stroke="#c9cfe0" stroke-width="1.8" marker-end="url(#fig-ah-l)"/>
+              <path d="M283.9 306.9 Q360 300 397.4 242" fill="none" stroke="#f2b33d" stroke-width="2" marker-end="url(#fig-ah-y)"/>
+              <path d="M309.8 115.4 Q360 120 397.4 178" fill="none" stroke-width="5" style="stroke: var(--accent); stroke-opacity: 0.25"/>
+              <path class="fig-flow" d="M309.8 115.4 Q360 120 397.4 178" fill="none" stroke-width="2.6" stroke-linecap="round" marker-end="url(#fig-ah-a)" style="stroke: var(--accent)"/>
+              <circle class="fig-pulse" cx="250" cy="110" r="54" fill="none" stroke-width="1.5" style="stroke: var(--accent); stroke-opacity: 0.6"/>
+              <circle cx="250" cy="110" r="43" fill="none" stroke-width="1.5" style="stroke: var(--accent); stroke-opacity: 0.45"/>
+              <circle cx="250" cy="110" r="32" style="fill: var(--accent)"/>
+              <circle cx="100" cy="210" r="32" fill="#161a2c" stroke="#c9cfe0" stroke-width="1.8"/>
+              <circle cx="250" cy="310" r="32" fill="#161a2c" stroke="#f2b33d" stroke-width="2"/>
+              <circle cx="418" cy="210" r="32" fill="#161a2c" stroke="#c9cfe0" stroke-width="1.8"/>
+              <text x="96" y="217" text-anchor="middle" font-size="21" fill="#f3f4f7">s<tspan font-size="13" dy="5">t</tspan></text>
+              <text x="250" y="117" text-anchor="middle" font-size="21" font-weight="500" fill="#ffffff">a¹</text>
+              <text x="250" y="317" text-anchor="middle" font-size="21" fill="#f2b33d">a²</text>
+              <text x="408" y="217" text-anchor="middle" font-size="21" fill="#f3f4f7">s<tspan font-size="12" dy="5">t+1</tspan></text>
+              <rect x="208" y="20" width="84" height="26" rx="13" style="fill: var(--accent)"/>
+              <text x="250" y="38" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff">do(a¹)</text>
+              <text x="100" y="264" text-anchor="middle" font-size="11" letter-spacing="0.5" fill="#7d84a0">state</text>
+              <text x="250" y="364" text-anchor="middle" font-size="11" letter-spacing="0.5" fill="#7d84a0">agent 2</text>
+              <text x="418" y="264" text-anchor="middle" font-size="11" letter-spacing="0.5" fill="#7d84a0">next state</text>
+              <circle cx="34" cy="414" r="5" style="fill: var(--accent)"/>
+              <text x="46" y="418" font-size="12" fill="#a7adc2">agent 1, intervened</text>
+              <circle cx="214" cy="414" r="5" fill="none" stroke="#f2b33d" stroke-width="2"/>
+              <text x="226" y="418" font-size="12" fill="#a7adc2">agent 2</text>
+              <circle cx="314" cy="414" r="5" fill="none" stroke="#c9cfe0" stroke-width="1.8"/>
+              <text x="326" y="418" font-size="12" fill="#a7adc2">environment</text>
+            </svg>
+            <figcaption>Fig. 1 · Intervening on agent 1, do(a¹), cuts its dependence on the current state. A causal model predicts how that choice changes the next joint state.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      {% if page.highlights %}
+        <section class="highlights" aria-label="Highlights">
+          <div class="wrap">
+            {% for h in page.highlights %}
+              <div class="hl hl-{{ h.kind | default: 'plain' }}">
+                <div class="hl-label">{{ h.label }}</div>
+                <div class="hl-text">{{ h.text }}</div>
+              </div>
+            {% endfor %}
+          </div>
+        </section>
+      {% endif %}
+
+      <section class="section section-alt" id="research">
+        <div class="wrap">
+          <div class="eyebrow">Research agenda</div>
+          <h2 class="h2">Three questions shape my PhD</h2>
+          <p class="lede">They go from how causal knowledge is represented, to where it enters the learning loop, to what changes when many agents share one environment.</p>
+          <div class="questions">
+            {% for q in site.data.research %}
+              <article class="q">
+                <div class="q-label">{{ q.label }}</div>
+                <h3>{{ q.question }}</h3>
+                {% if q.papers %}
+                  <div class="q-related">
+                    <div class="q-related-label">Related papers</div>
+                    {% for r in q.papers %}
+                      <a href="#pub-{{ r.id }}" data-pub-link>{{ r.label }}</a>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </article>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="publications">
+        <div class="wrap">
+          <div class="pubs-head">
+            <div>
+              <div class="eyebrow">Publications</div>
+              <h2 class="h2">Papers and preprints</h2>
+            </div>
+            {% if site.scholar_userid %}
+              <a class="link-accent" href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Google Scholar profile →</a>
+            {% endif %}
+          </div>
+
+          {% assign filters = 'selected:Selected|all:All|causal:Causal RL|multi:Multi-agent|earlier:Earlier work' | split: '|' %}
+          <div class="filters" role="group" aria-label="Filter publications" data-pub-filter hidden>
+            {% for f in filters %}
+              {% assign parts = f | split: ':' %}
+              {% assign tag = parts[0] %}
+              {% assign count = 0 %}
+              {% for p in pubs %}
+                {% if tag == 'all' or p.tags contains tag %}{% assign count = count | plus: 1 %}{% endif %}
+              {% endfor %}
+              <button type="button" class="chip" data-filter="{{ tag }}" aria-pressed="false">{{ parts[1] }} <span class="chip-count">{{ count }}</span></button>
+            {% endfor %}
+          </div>
+
+          <div class="pubs">
+            {% for p in pubs %}
+              <article class="pub" id="pub-{{ p.id }}" data-pub data-tags="{{ p.tags | join: ' ' }}">
+                <div class="pub-year">{{ p.year }}</div>
+                <div class="pub-thumb">
+                  {% if p.image %}<img src="{{ p.image | relative_url }}" alt="{{ p.image_alt }}" loading="lazy">{% endif %}
+                </div>
+                <div class="pub-body">
+                  <h3 class="pub-title">{{ p.title }}</h3>
+                  <div class="pub-authors">
+                    {%- for a in p.authors -%}
+                      {%- if a == me -%}<strong>{{ a }}</strong>{%- else -%}{{ a }}{%- endif -%}
+                      {%- unless forloop.last -%}, {% endunless -%}
+                    {%- endfor -%}
+                  </div>
+                  <div class="pub-venue">{{ p.venue }}</div>
+                  <div class="pub-meta">
+                    {% if p.badge %}<span class="tag tag-{{ p.badge_kind | default: 'oral' }}">{{ p.badge }}</span>{% endif %}
+                    {% for l in p.links %}
+                      {% if l.url contains '://' %}{% assign href = l.url %}{% else %}{% assign href = l.url | relative_url %}{% endif %}
+                      <a class="tag tag-link" href="{{ href }}">{{ l.label }}</a>
+                    {% endfor %}
+                    {% if p.bibtex %}
+                      <details class="bib">
+                        <summary class="tag tag-link">BibTeX</summary>
+                        <div class="bib-box">
+                          <button type="button" class="copy" data-copy>Copy</button>
+                          <pre><code>{{ p.bibtex | strip | xml_escape }}</code></pre>
+                        </div>
+                      </details>
+                    {% endif %}
+                  </div>
+                </div>
+              </article>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="news">
+        <div class="wrap split">
+          <div class="news-col">
+            <h2 class="h3-section">News</h2>
+            {% assign news = site.news | sort: 'date' | reverse %}
+            {% assign shown_news = page.news_limit | default: 6 %}
+            {% assign older_count = news.size | minus: shown_news %}
+            {% for item in news limit: shown_news %}
+              <div class="news-item">
+                <div class="news-date">{{ item.date | date: '%b %Y' }}</div>
+                <div class="news-text">
+                  {% if item.inline %}{{ item.content | remove: '<p>' | remove: '</p>' | strip }}{% else %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% endif %}
+                </div>
+              </div>
+            {% endfor %}
+            {% if older_count > 0 %}
+              <details class="older">
+                <summary>Older news ({{ older_count }})</summary>
+                {% for item in news offset: shown_news %}
+                  <div class="news-item">
+                    <div class="news-date">{{ item.date | date: '%b %Y' }}</div>
+                    <div class="news-text">
+                      {% if item.inline %}{{ item.content | remove: '<p>' | remove: '</p>' | strip }}{% else %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% endif %}
+                    </div>
+                  </div>
+                {% endfor %}
+              </details>
+            {% endif %}
+          </div>
+
+          <div class="talks-col" id="talks">
+            <h2 class="h3-section">Talks</h2>
+            {% for t in site.data.talks %}
+              <div class="talk">
+                <div class="talk-meta">{{ t.when }} · {{ t.where }}</div>
+                <div class="talk-title">
+                  {% if t.url %}
+                    {% if t.url contains '://' %}{% assign href = t.url %}{% else %}{% assign href = t.url | relative_url %}{% endif %}
+                    <a href="{{ href }}">{{ t.title }}</a>
+                  {% else %}{{ t.title }}{% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="wrap">
+        <div class="footer-top">
+          <div class="footer-contact">
+            <h2 class="footer-title">Let's talk causal RL.</h2>
+            {% if site.email %}<a class="email" href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}
+          </div>
+          <nav class="profiles" aria-label="Profiles">
+            {% if site.scholar_userid %}<a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Scholar</a>{% endif %}
+            {% if site.orcid_id %}<a href="https://orcid.org/{{ site.orcid_id }}">ORCID</a>{% endif %}
+            {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}">GitHub</a>{% endif %}
+            {% if site.linkedin_username %}<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>{% endif %}
+            <a class="solid" href="{{ cv_url }}">CV</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <span>© {{ site.time | date: '%Y' }} {{ site.first_name }} {{ site.last_name }} · Modena and Oxford</span>
+          <span><a href="{{ '/blog/' | relative_url }}">Blog</a> · <a href="{{ '/assets/pdf/MasterDegree.pdf' | relative_url }}">MSc transcript (Italian)</a> · Updated {{ site.time | date: '%B %Y' }}</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{{ '/assets/onepage/site.js' | relative_url }}" defer></script>
+  </body>
+</html>

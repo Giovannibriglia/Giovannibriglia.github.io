@@ -1,0 +1,194 @@
+# Publications listed on the homepage, newest first.
+#
+# tags drive the filter buttons above the list:
+#   selected  shown by default ("Selected")
+#   causal    "Causal RL"
+#   multi     "Multi-agent"
+#   earlier   "Earlier work"
+# badge_kind is "award" (amber) or "oral" (accent colour).
+# Authors written exactly as in `me` below are shown in bold.
+
+me: G. Briglia
+
+items:
+  - id: aamas2026-gnn
+    title: Scaling Multi-Agent Epistemic Planning through GNN-Derived Heuristics
+    authors: [G. Briglia, F. Fabiano, S. Mariani]
+    venue: AAMAS 2026 · Full paper
+    year: 2026
+    image: /assets/img/home/GNNxEpistemic.png
+    image_alt: Diagram of the GNN-derived heuristic pipeline
+    badge: Oral
+    badge_kind: oral
+    tags: [selected, multi]
+    links:
+      - { label: arXiv, url: "https://arxiv.org/abs/2508.12840" }
+      - { label: Slides, url: "/assets/pdf/2026_aamas_GNNxEpistemic_slides.pdf" }
+    bibtex: |
+      @inproceedings{brigliascaling,
+        title={Scaling Multi-Agent Epistemic Planning through GNN-Derived Heuristics},
+        author={Briglia, Giovanni and Fabiano, Francesco and Mariani, Stefano},
+        booktitle={The 25th International Conference on Autonomous Agents and Multi-Agent Systems},
+        year={2026}
+      }
+
+  - id: aamas2026-dc
+    title: Causal Learning and Reasoning in Multi-Agent Reinforcement Learning
+    authors: [G. Briglia]
+    venue: AAMAS 2026 · Doctoral Consortium
+    year: 2026
+    image: /assets/img/home/poster_aamas26_dc.png
+    image_alt: Doctoral Consortium poster
+    tags: [causal, multi]
+    links:
+      - { label: ACM DL, url: "https://dl.acm.org/doi/abs/10.65109/RZTO8815" }
+      - { label: Poster, url: "/assets/pdf/2026_briglia_poster_aamas26_dc.pdf" }
+    bibtex: |
+      @inproceedings{briglia2026causal,
+        title={Causal Learning and Reasoning in Multi-Agent Reinforcement Learning},
+        author={Briglia, Giovanni},
+        booktitle={Proc. of the 25th International Conference on Autonomous Agents and Multiagent Systems},
+        pages={3975--3977},
+        year={2026}
+      }
+
+  - id: percomw2026
+    title: Causal Models Improve Reinforcement Learning for Pervasive and Robotic Tasks
+    authors: [G. Briglia, S. Mariani, F. Zambonelli]
+    venue: CoMoRe-AI Workshop @ IEEE PerCom 2026 · in press
+    year: 2026
+    image: /assets/img/home/causal_vf.png
+    image_alt: Results of causal value estimation
+    tags: [causal]
+    links:
+      - { label: Slides, url: "https://docs.google.com/presentation/d/e/2PACX-1vRJ-QUeHhgeUarkUowppYzHxQWH3anNugmE2FekXCjRYJFwWHoE8ObvBcpmTmCD9aJ5pfs0ABoBJNTf/pub?start=false&loop=false&delayms=3000" }
+    bibtex: |
+      @inproceedings{briglia2026pervasive,
+        title={Causal Models Improve Reinforcement Learning for Pervasive and Robotic Tasks},
+        author={Briglia, Giovanni and Mariani, Stefano and Zambonelli, Franco},
+        booktitle={2026 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops)},
+        year={2026},
+        organization={IEEE Computer Society}
+      }
+
+  - id: claramas2026
+    title: "Causal Learning and Reasoning in Multi-Agent Systems: Goals, Issues, and Taxonomy"
+    authors: [S. Mariani, G. Briglia, A. Meyer-Vitali, M. Klusch, F. Zambonelli]
+    venue: CLaRAMAS Workshop @ AAMAS 2026 · in press
+    year: 2026
+    image: /assets/img/home/why_taxonomy.png
+    image_alt: Taxonomy of causal learning in multi-agent systems
+    tags: [causal, multi]
+    links:
+      - { label: OpenReview, url: "https://openreview.net/pdf?id=FCr9YFHvwO" }
+    bibtex: |
+      @inproceedings{mariani2026taxonomy,
+        author={Mariani, Stefano and Briglia, Giovanni and Meyer-Vitali, Andr{\'e} and Klusch, Matthias and Zambonelli, Franco},
+        title={Causal Learning and Reasoning in Multi-Agent Systems: Goals, Issues, and Taxonomy},
+        booktitle={Proceedings of the 1st International Workshop on Causal Learning and Reasoning in Agents and Multiagent Systems, CLaRAMAS},
+        publisher={Springer},
+        year={2026}
+      }
+
+  - id: area2025
+    title: Towards Safe Action Policies in Multi-robot Systems with Causal Reinforcement Learning
+    authors: [G. Briglia, S. Mariani, F. Zambonelli]
+    venue: AREA Workshop @ ECAI 2025
+    year: 2025
+    image: /assets/img/publication_preview/flocking.gif
+    image_alt: Multi-robot flocking simulation
+    badge: Best Paper Award
+    badge_kind: award
+    tags: [selected, causal, multi]
+    links:
+      - { label: Springer, url: "https://link.springer.com/chapter/10.1007/978-3-032-08049-3_4" }
+      - { label: Slides, url: "https://docs.google.com/presentation/d/e/2PACX-1vRZOpevFvDu5AMudp4KhepiNdqu19m-H6mKsmd9nQa9xrItNZHyovsHPO1HIa53iQ/pub?start=false&loop=false&delayms=3000" }
+    bibtex: |
+      @inproceedings{briglia2025towards,
+        title={Towards Safe Action Policies in Multi-robot Systems with Causal Reinforcement Learning},
+        author={Briglia, Giovanni and Mariani, Stefano and Zambonelli, Franco},
+        booktitle={Workshop on Agents and Robots for reliable Engineered Autonomy},
+        pages={51--71},
+        year={2025},
+        organization={Springer}
+      }
+
+  - id: roadmap2025
+    title: A Roadmap Towards Improving Multi-Agent Reinforcement Learning With Causal Discovery And Inference
+    authors: [G. Briglia, S. Mariani, F. Zambonelli]
+    venue: arXiv preprint 2503.17803
+    year: 2025
+    image: /assets/img/home/causal_benchmarl.jpg
+    image_alt: Overview figure of causal multi-agent RL
+    tags: [selected, causal, multi]
+    links:
+      - { label: arXiv, url: "https://arxiv.org/abs/2503.17803" }
+    bibtex: |
+      @article{briglia2025roadmap,
+        title={A Roadmap Towards Improving Multi-Agent Reinforcement Learning With Causal Discovery And Inference},
+        author={Briglia, Giovanni and Mariani, Stefano and Zambonelli, Franco},
+        journal={arXiv preprint arXiv:2503.17803},
+        year={2025}
+      }
+
+  - id: prima2024
+    title: Improving Reinforcement Learning-Based Autonomous Agents with Causal Models
+    authors: [G. Briglia, M. Lippi, S. Mariani, F. Zambonelli]
+    venue: PRIMA 2024 · Kyoto
+    year: 2024
+    image: /assets/img/publication_preview/prima_maze.gif
+    image_alt: Agents exploring a grid maze
+    tags: [selected, causal]
+    links:
+      - { label: Slides, url: "https://docs.google.com/presentation/d/e/2PACX-1vTDZUHQdq7vz76_2bpJQyv7qEs7iYSTHEL0j5rVM4-nWIytgcNoq7vLfv64DY4Qeg/pub?start=false&loop=false&delayms=60000" }
+      - { label: Blog post, url: "/blog/2024/paper-prima/" }
+    bibtex: |
+      @inproceedings{briglia2024improving,
+        title={Improving Reinforcement Learning-Based Autonomous Agents with Causal Models},
+        author={Briglia, Giovanni and Lippi, Marco and Mariani, Stefano and Zambonelli, Franco},
+        booktitle={International Conference on Principles and Practice of Multi-Agent Systems},
+        pages={267--283},
+        year={2024},
+        organization={Springer}
+      }
+
+  - id: access2024
+    title: Bearing Fault Detection and Recognition From Supply Currents With Decision Trees
+    authors: [G. Briglia, F. Immovilli, M. Cocconcelli, M. Lippi]
+    venue: IEEE Access, vol. 12
+    year: 2024
+    image: /assets/img/home/bearing_fault_detection.png
+    image_alt: Bearing fault detection pipeline
+    tags: [earlier]
+    links:
+      - { label: DOI, url: "https://doi.org/10.1109/ACCESS.2023.3348245" }
+    bibtex: |
+      @article{10376052,
+        author={Briglia, Giovanni and Immovilli, Fabio and Cocconcelli, Marco and Lippi, Marco},
+        journal={IEEE Access},
+        title={Bearing Fault Detection and Recognition From Supply Currents With Decision Trees},
+        year={2024},
+        volume={12},
+        pages={12760-12770},
+        doi={10.1109/ACCESS.2023.3348245}
+      }
+
+  - id: icsrs2023
+    title: Cross-Load Generalization of Bearing Fault Recognition with Decision Trees
+    authors: [G. Briglia, F. Immovilli, M. Cocconcelli, M. Lippi]
+    venue: ICSRS 2023
+    year: 2023
+    image: /assets/img/home/cross_load_generalization.png
+    image_alt: Cross-load generalization results
+    tags: [earlier]
+    links:
+      - { label: DOI, url: "https://doi.org/10.1109/ICSRS59833.2023.10381353" }
+    bibtex: |
+      @inproceedings{10381353,
+        author={Briglia, Giovanni and Immovilli, Fabio and Cocconcelli, Marco and Lippi, Marco},
+        booktitle={2023 7th International Conference on System Reliability and Safety (ICSRS)},
+        title={Cross-Load Generalization of Bearing Fault Recognition with Decision Trees},
+        year={2023},
+        pages={400-406},
+        doi={10.1109/ICSRS59833.2023.10381353}
+      }

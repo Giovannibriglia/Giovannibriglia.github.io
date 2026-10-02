@@ -1,0 +1,26 @@
+# The three research questions on the homepage.
+# `papers` point at publication ids in _data/publications.yml.
+- label: Representation
+  question: >-
+    What representation, learned and updated while the agent acts, best captures
+    transition dynamics in a way that is effective and explainable, and can be reused
+    across environments, tasks and policies?
+  papers:
+    - { id: prima2024, label: "PRIMA 2024 · Causal models for RL agents" }
+    - { id: percomw2026, label: "PerCom-W 2026 · Pervasive and robotic tasks" }
+
+- label: Integration
+  question: >-
+    To what extent, and through which mechanisms, can causal knowledge become an active
+    part of policy optimisation and value estimation? At which stage of RL does it help most?
+  papers:
+    - { id: area2025, label: "AREA @ ECAI 2025 · Safe multi-robot policies" }
+    - { id: percomw2026, label: "PerCom-W 2026 · Causal value estimation" }
+
+- label: Multi-agent
+  question: >-
+    How can causality-driven RL extend to multi-agent settings, where cooperation and
+    competition add new layers of interdependence?
+  papers:
+    - { id: roadmap2025, label: "arXiv 2025 · A roadmap for causal MARL" }
+    - { id: claramas2026, label: "CLaRAMAS 2026 · Goals, issues and taxonomy" }
