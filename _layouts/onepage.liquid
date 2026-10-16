@@ -66,51 +66,85 @@
 
           <figure class="hero-figure">
             <svg viewBox="0 0 520 440" role="img" aria-labelledby="fig-title">
-              <title id="fig-title">Time-unrolled causal graph of two agents. The state at time t points to the actions of agent 1 and agent 2 and to the next state, and both actions point to the next state. An intervention on agent 1's action cuts the edge from the state to that action.</title>
+              <title id="fig-title">A factored world model. State variables s1 and s2 and the action a at time t feed two learned mechanisms, one for each next-state variable. The world has changed for s2 prime: its mechanism is flagged and relearned, while the mechanism for s1 prime is kept.</title>
               <defs>
                 <pattern id="fig-dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#262c44"/></pattern>
                 <radialGradient id="fig-glow"><stop offset="0" style="stop-color: var(--accent); stop-opacity: 0.55"/><stop offset="1" style="stop-color: var(--accent); stop-opacity: 0"/></radialGradient>
+                <radialGradient id="fig-glow-y"><stop offset="0" stop-color="#f2b33d" stop-opacity="0.32"/><stop offset="1" stop-color="#f2b33d" stop-opacity="0"/></radialGradient>
                 <marker id="fig-ah-l" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c9cfe0"/></marker>
-                <marker id="fig-ah-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill: var(--accent)"/></marker>
+                <marker id="fig-ah-a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#8f8ef7"/></marker>
                 <marker id="fig-ah-y" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#f2b33d"/></marker>
               </defs>
               <rect width="520" height="440" fill="url(#fig-dots)"/>
-              <rect x="22" y="22" width="304" height="364" rx="18" fill="#ffffff" fill-opacity="0.025" stroke="#ffffff" stroke-opacity="0.07"/>
-              <rect x="340" y="22" width="158" height="364" rx="18" fill="#ffffff" fill-opacity="0.025" stroke="#ffffff" stroke-opacity="0.07"/>
+              <rect x="22" y="22" width="170" height="364" rx="18" fill="#ffffff" fill-opacity="0.025" stroke="#ffffff" stroke-opacity="0.07"/>
+              <rect x="206" y="22" width="292" height="364" rx="18" fill="#ffffff" fill-opacity="0.025" stroke="#ffffff" stroke-opacity="0.07"/>
               <text x="40" y="48" font-size="11" letter-spacing="1.5" fill="#7d84a0">TIME t</text>
-              <text x="358" y="48" font-size="11" letter-spacing="1.5" fill="#7d84a0">TIME t+1</text>
-              <circle cx="250" cy="110" r="120" fill="url(#fig-glow)"/>
-              <path d="M117 182.9 Q150 130 191.2 121.8" fill="none" stroke="#59607c" stroke-width="1.8" stroke-dasharray="4 6"/>
-              <circle cx="152" cy="141" r="11" fill="#0e1120"/>
-              <path d="M146.5 135.5l11 11M157.5 135.5l-11 11" stroke="#ff7a59" stroke-width="2.4" stroke-linecap="round" fill="none"/>
-              <path d="M117 237.1 Q150 290 212.8 302.6" fill="none" stroke="#c9cfe0" stroke-width="1.8" marker-end="url(#fig-ah-l)"/>
-              <path d="M134 210 L378 210" fill="none" stroke="#c9cfe0" stroke-width="1.8" marker-end="url(#fig-ah-l)"/>
-              <path d="M283.9 306.9 Q360 300 397.4 242" fill="none" stroke="#f2b33d" stroke-width="2" marker-end="url(#fig-ah-y)"/>
-              <path d="M309.8 115.4 Q360 120 397.4 178" fill="none" stroke-width="5" style="stroke: var(--accent); stroke-opacity: 0.25"/>
-              <path class="fig-flow" d="M309.8 115.4 Q360 120 397.4 178" fill="none" stroke-width="2.6" stroke-linecap="round" marker-end="url(#fig-ah-a)" style="stroke: var(--accent)"/>
-              <circle class="fig-pulse" cx="250" cy="110" r="54" fill="none" stroke-width="1.5" style="stroke: var(--accent); stroke-opacity: 0.6"/>
-              <circle cx="250" cy="110" r="43" fill="none" stroke-width="1.5" style="stroke: var(--accent); stroke-opacity: 0.45"/>
-              <circle cx="250" cy="110" r="32" style="fill: var(--accent)"/>
-              <circle cx="100" cy="210" r="32" fill="#161a2c" stroke="#c9cfe0" stroke-width="1.8"/>
-              <circle cx="250" cy="310" r="32" fill="#161a2c" stroke="#f2b33d" stroke-width="2"/>
-              <circle cx="418" cy="210" r="32" fill="#161a2c" stroke="#c9cfe0" stroke-width="1.8"/>
-              <text x="96" y="217" text-anchor="middle" font-size="21" fill="#f3f4f7">s<tspan font-size="13" dy="5">t</tspan></text>
-              <text x="250" y="117" text-anchor="middle" font-size="21" font-weight="500" fill="#ffffff">a¹</text>
-              <text x="250" y="317" text-anchor="middle" font-size="21" fill="#f2b33d">a²</text>
-              <text x="408" y="217" text-anchor="middle" font-size="21" fill="#f3f4f7">s<tspan font-size="12" dy="5">t+1</tspan></text>
-              <rect x="208" y="20" width="84" height="26" rx="13" style="fill: var(--accent)"/>
-              <text x="250" y="38" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff">do(a¹)</text>
-              <text x="100" y="264" text-anchor="middle" font-size="11" letter-spacing="0.5" fill="#7d84a0">state</text>
-              <text x="250" y="364" text-anchor="middle" font-size="11" letter-spacing="0.5" fill="#7d84a0">agent 2</text>
-              <text x="418" y="264" text-anchor="middle" font-size="11" letter-spacing="0.5" fill="#7d84a0">next state</text>
+              <text x="224" y="48" font-size="11" letter-spacing="1.5" fill="#7d84a0">MECHANISMS</text>
+              <text x="398" y="48" font-size="11" letter-spacing="1.5" fill="#7d84a0">TIME t+1</text>
+              <circle cx="100" cy="320" r="90" fill="url(#fig-glow)"/>
+              <circle cx="290" cy="290" r="96" fill="url(#fig-glow-y)"/>
+
+              <!-- edges from time t into the mechanisms -->
+              <path d="M130 125 L249 146" fill="none" stroke="#c9cfe0" stroke-width="1.8" marker-end="url(#fig-ah-l)"/>
+              <path d="M121 141.7 L248 276" fill="none" stroke="#c9cfe0" stroke-width="1.8" marker-end="url(#fig-ah-l)"/>
+              <path d="M127.4 232.2 L248 286" fill="none" stroke="#c9cfe0" stroke-width="1.8" marker-end="url(#fig-ah-l)"/>
+              <path d="M121 298.6 L248 168" fill="none" stroke="#8f8ef7" stroke-width="1.8" marker-end="url(#fig-ah-a)"/>
+              <path d="M129.7 316 L248 300.5" fill="none" stroke="#8f8ef7" stroke-width="1.8" marker-end="url(#fig-ah-a)"/>
+
+              <!-- mechanism 1: kept -->
+              <text x="290" y="113" text-anchor="middle" font-size="11" letter-spacing="0.5" fill="#7d84a0">✓ kept</text>
+              <rect x="252" y="123" width="76" height="54" rx="10" fill="#161a2c" stroke="#c9cfe0" stroke-width="1.6"/>
+              <g stroke="#59607c" stroke-width="1">
+                <path d="M268 138L290 142M268 138L290 158M268 150L290 142M268 150L290 158M268 162L290 142M268 162L290 158M290 142L312 150M290 158L312 150"/>
+              </g>
+              <g fill="#c9cfe0">
+                <circle cx="268" cy="138" r="2.6"/><circle cx="268" cy="150" r="2.6"/><circle cx="268" cy="162" r="2.6"/>
+                <circle cx="290" cy="142" r="2.6"/><circle cx="290" cy="158" r="2.6"/><circle cx="312" cy="150" r="2.6"/>
+              </g>
+              <text x="290" y="197" text-anchor="middle" font-size="11" fill="#a7adc2">p(s₁′ | s₁, a)</text>
+
+              <!-- mechanism 2: changed, relearned -->
+              <rect x="222" y="234" width="136" height="24" rx="12" fill="#f2b33d"/>
+              <text x="290" y="250" text-anchor="middle" font-size="11" font-weight="500" fill="#0e1120">changed → relearn</text>
+              <rect class="fig-pulse" x="246" y="257" width="88" height="66" rx="14" fill="none" stroke="#f2b33d" stroke-width="1.5" stroke-opacity="0.6"/>
+              <rect x="252" y="263" width="76" height="54" rx="10" fill="#161a2c" stroke="#f2b33d" stroke-width="2"/>
+              <g stroke="#7a6230" stroke-width="1">
+                <path d="M268 278L290 282M268 278L290 298M268 290L290 282M268 290L290 298M268 302L290 282M268 302L290 298M290 282L312 290M290 298L312 290"/>
+              </g>
+              <g fill="#f2b33d">
+                <circle cx="268" cy="278" r="2.6"/><circle cx="268" cy="290" r="2.6"/><circle cx="268" cy="302" r="2.6"/>
+                <circle cx="290" cy="282" r="2.6"/><circle cx="290" cy="298" r="2.6"/><circle cx="312" cy="290" r="2.6"/>
+              </g>
+              <text x="290" y="337" text-anchor="middle" font-size="11" fill="#a7adc2">p(s₂′ | s₁, s₂, a)</text>
+
+              <!-- mechanisms to time t+1 -->
+              <path d="M330 150 L398 150" fill="none" stroke="#c9cfe0" stroke-width="1.8" marker-end="url(#fig-ah-l)"/>
+              <path class="fig-flow" d="M330 290 L398 290" fill="none" stroke="#f2b33d" stroke-width="2.4" stroke-linecap="round" marker-end="url(#fig-ah-y)"/>
+
+              <!-- nodes -->
+              <circle cx="100" cy="120" r="30" fill="#161a2c" stroke="#c9cfe0" stroke-width="1.8"/>
+              <circle cx="100" cy="220" r="30" fill="#161a2c" stroke="#c9cfe0" stroke-width="1.8"/>
+              <circle cx="100" cy="320" r="40" fill="none" stroke-width="1.5" style="stroke: var(--accent); stroke-opacity: 0.45"/>
+              <circle cx="100" cy="320" r="30" style="fill: var(--accent)"/>
+              <circle cx="432" cy="150" r="30" fill="#161a2c" stroke="#c9cfe0" stroke-width="1.8"/>
+              <circle cx="432" cy="290" r="30" fill="#161a2c" stroke="#f2b33d" stroke-width="2"/>
+              <text x="96" y="127" text-anchor="middle" font-size="21" fill="#f3f4f7">s<tspan font-size="13" dy="5">1</tspan></text>
+              <text x="96" y="227" text-anchor="middle" font-size="21" fill="#f3f4f7">s<tspan font-size="13" dy="5">2</tspan></text>
+              <text x="100" y="327" text-anchor="middle" font-size="21" font-weight="500" fill="#ffffff">a</text>
+              <text x="429" y="157" text-anchor="middle" font-size="21" fill="#f3f4f7">s<tspan font-size="13" dy="5">1</tspan><tspan font-size="20" dx="-5" dy="-13">′</tspan></text>
+              <text x="429" y="297" text-anchor="middle" font-size="21" fill="#f2b33d">s<tspan font-size="13" dy="5">2</tspan><tspan font-size="20" dx="-5" dy="-13">′</tspan></text>
+              <rect x="64" y="368" width="72" height="24" rx="12" style="fill: var(--accent)"/>
+              <text x="100" y="385" text-anchor="middle" font-size="13" font-weight="500" fill="#ffffff">do(a)</text>
+
+              <!-- legend -->
               <circle cx="34" cy="414" r="5" style="fill: var(--accent)"/>
-              <text x="46" y="418" font-size="12" fill="#a7adc2">agent 1, intervened</text>
-              <circle cx="214" cy="414" r="5" fill="none" stroke="#f2b33d" stroke-width="2"/>
-              <text x="226" y="418" font-size="12" fill="#a7adc2">agent 2</text>
-              <circle cx="314" cy="414" r="5" fill="none" stroke="#c9cfe0" stroke-width="1.8"/>
-              <text x="326" y="418" font-size="12" fill="#a7adc2">environment</text>
+              <text x="46" y="418" font-size="12" fill="#a7adc2">agent's action</text>
+              <rect x="180" y="409" width="10" height="10" rx="2" fill="none" stroke="#f2b33d" stroke-width="2"/>
+              <text x="198" y="418" font-size="12" fill="#a7adc2">mechanism changed</text>
+              <rect x="370" y="409" width="10" height="10" rx="2" fill="none" stroke="#c9cfe0" stroke-width="1.8"/>
+              <text x="388" y="418" font-size="12" fill="#a7adc2">mechanism kept</text>
             </svg>
-            <figcaption>Fig. 1 · Intervening on agent 1, do(a¹), cuts its dependence on the current state. A causal model predicts how that choice changes the next joint state.</figcaption>
+            <figcaption>Fig. 1 · A modular world model: each next-state variable has its own learned mechanism. When the world changes, only the mechanism that moved is flagged and relearned; the others keep what they know.</figcaption>
           </figure>
         </div>
       </section>
@@ -132,7 +166,7 @@
         <div class="wrap">
           <div class="eyebrow">Research agenda</div>
           <h2 class="h2">Three questions shape my PhD</h2>
-          <p class="lede">They go from how causal knowledge is represented, to where it enters the learning loop, to what changes when many agents share one environment.</p>
+          <p class="lede">They go from how a world model is represented, to how decisions built on it can be trusted, to what changes when many agents share one environment.</p>
           <div class="questions">
             {% for q in site.data.research %}
               <article class="q">
@@ -164,7 +198,7 @@
             {% endif %}
           </div>
 
-          {% assign filters = 'selected:Selected|all:All|causal:Causal RL|multi:Multi-agent|earlier:Earlier work' | split: '|' %}
+          {% assign filters = 'selected:Selected|all:All|models:World models|causal:Causal RL|multi:Multi-agent|earlier:Earlier work' | split: '|' %}
           <div class="filters" role="group" aria-label="Filter publications" data-pub-filter hidden>
             {% for f in filters %}
               {% assign parts = f | split: ':' %}
@@ -268,7 +302,7 @@
       <div class="wrap">
         <div class="footer-top">
           <div class="footer-contact">
-            <h2 class="footer-title">Let's talk causal RL.</h2>
+            <h2 class="footer-title">Let's talk world models.</h2>
             {% if site.email %}<a class="email" href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}
           </div>
           <nav class="profiles" aria-label="Profiles">

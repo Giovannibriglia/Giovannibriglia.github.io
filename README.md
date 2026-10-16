@@ -8,10 +8,10 @@ It is a [Jekyll](https://jekyllrb.com/) site built on the [al-folio](https://git
 
 The homepage (`/`) is rendered by [`_layouts/onepage.liquid`](_layouts/onepage.liquid) and has these sections, in order:
 
-1. **Hero**: name, role, headline, intro, supervisors line and the animated causal-graph figure
+1. **Hero**: name, role, headline, intro, supervisors line and the animated world-model figure (learned mechanisms, one of which changes and is relearned)
 2. **Highlights**: four short cards (award, oral, and so on)
 3. **Research**: the three research questions, each linking to related papers
-4. **Publications**: filterable list (Selected, All, Causal RL, Multi-agent, Earlier work) with BibTeX
+4. **Publications**: filterable list (Selected, All, World models, Causal RL, Multi-agent, Earlier work) with BibTeX
 5. **News and Talks**: the newest news items, with older ones folded away
 6. **Contact**: email, profile links and CV
 
@@ -54,7 +54,7 @@ Add an entry to `items` in `_data/publications.yml`. The list is shown in file o
     }
 ```
 
-Tags decide which filter shows the paper: `selected` (shown by default), `causal`, `multi` and `earlier`. Keep thumbnails small, about 480 px wide, in `assets/img/home/`.
+Tags decide which filter shows the paper: `selected` (shown by default), `models`, `causal`, `multi` and `earlier`. Keep thumbnails small, about 480 px wide, in `assets/img/home/`.
 
 To link a paper from a research question, add its `id` under that question's `papers` in `_data/research.yml`.
 

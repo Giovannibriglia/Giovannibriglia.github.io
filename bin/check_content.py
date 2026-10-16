@@ -19,7 +19,7 @@ import yaml
 ROOT = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), ".."))
 IN_ACTIONS = os.environ.get("GITHUB_ACTIONS") == "true"
 
-PUB_TAGS = {"selected", "causal", "multi", "earlier"}
+PUB_TAGS = {"selected", "models", "causal", "multi", "earlier"}
 BADGE_KINDS = {"oral", "award"}
 HIGHLIGHT_KINDS = {"award", "oral", "plain"}
 ID_PATTERN = re.compile(r"^[a-z0-9][a-z0-9-]*$")

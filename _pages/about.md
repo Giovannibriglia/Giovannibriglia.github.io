@@ -3,16 +3,20 @@ layout: onepage
 title: Giovanni Briglia
 permalink: /
 description: >-
-  Giovanni Briglia, PhD student working on causality-driven reinforcement learning
-  for single- and multi-agent systems.
+  Giovanni Briglia, PhD student working on modular, causal world models for
+  decision-making under uncertainty in single- and multi-agent systems.
 
 # Hero
 role: PhD student, National PhD in AI · UNIMORE · visiting the University of Oxford
-headline: Agents that learn what their actions <span class="accent">cause</span>.
+headline: Agents that learn <span class="accent">modular</span> models of what their actions do.
 intro: >-
-  I work on causality-driven reinforcement learning for single- and multi-agent systems.
-  I study how agents can learn causal models while they act, and use them to explore
-  faster, transfer to new tasks and explain their decisions.
+  I study how agents can learn structured world models: factored models in which each
+  variable has its own local mechanism on an explicit graph, and how to use them to decide
+  under uncertainty. With Neural Bayesian Networks, the graph stays explicit while each
+  conditional is learned by a neural density estimator, so models run efficiently on GPUs,
+  keep a modular, inspectable structure, and can be revised one mechanism at a time when
+  the world changes. At Oxford I am exploring how such models connect to Markov decision
+  processes and formal methods, to reason about how far an agent's decisions can be trusted.
 
 # Strip under the hero. kind: award | oral | plain
 highlights:
